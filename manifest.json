@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Sereniser",
+  "description": "Extention that will randomly replace words to look like Seren wrote it",
+  "version": "1.0",
+
+//   TODO: add rest of sizes and get real icon not google test one
+  "icons": {
+    "16": "img/hello_extensions.png"
+  },
+
+  "content_scripts": [
+    {
+      "js": ["scripts/replaceContent.js"],
+      "matches": ["*://*/*"]
+    }
+  ]
+}
